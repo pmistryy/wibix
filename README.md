@@ -79,16 +79,12 @@ curl -F "file=@sample_data.csv" http://localhost:8000/upload_csv/
 ### Search API
 ```bash
 # Get best match
-curl "http://localhost:8000/search/best/?query=Alice"
+curl "http://localhost:8000/search/?query=Alice"
 
-# Get multiple results
-curl "http://localhost:8000/search/?query=engineer"
-```
 
 ### API Endpoints
 - `POST /upload_csv/` - Upload and vectorize CSV data
-- `GET /search/` - Get multiple search results
-- `GET /search/best/` - Get only the best match
+- `GET /search/` - Get only the best match
 - `GET /docs` - Interactive API documentation
 
 ## Project Structure
